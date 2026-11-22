@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { diagramEdges } from '../data/dynasty'
 import { diagramNodes, kingPath, type DiagramNode } from '../data/selectors'
+import { useT } from '../i18n/Locale'
 
 const NODE_W = 228
 const NODE_H = 196
@@ -28,7 +29,14 @@ function useNarrow() {
   return narrow
 }
 
+function parentLine(value: string, debated: string, unnamed: string) {
+  if (value === 'Debated') return debated
+  if (value === 'Not named here') return unnamed
+  return value
+}
+
 function NodeBody({ node }: { node: DiagramNode }) {
+  const t = useT()
   return (
     <>
       <span className="node-name">{node.name}</span>
@@ -39,8 +47,12 @@ function NodeBody({ node }: { node: DiagramNode }) {
       ) : null}
       {node.birthLine ? <span className="node-meta">{node.birthLine}</span> : null}
       {node.reignLine ? <span className="node-meta">{node.reignLine}</span> : null}
-      <span className="node-meta">Father: {node.fatherLine}</span>
-      <span className="node-meta">Mother: {node.motherLine}</span>
+      <span className="node-meta">
+        {t('father')}: {parentLine(node.fatherLine, t('debated'), t('notNamed'))}
+      </span>
+      <span className="node-meta">
+        {t('mother')}: {parentLine(node.motherLine, t('debated'), t('notNamed'))}
+      </span>
       {node.tone === 'kin' || node.tone === 'debated' ? <span className="node-caption">{node.caption}</span> : null}
     </>
   )
@@ -198,12 +210,13 @@ function DynastyScroller({
 }
 
 function Legend() {
+  const t = useT()
   return (
     <ul className="legend">
-      <li>Gold line: parent to child</li>
-      <li>Dashed red line: succession or kinship still debated</li>
-      <li>Aditya II is the heir who was killed. He is not in the coronation list.</li>
-      <li>Kundavai, daughter of Rajaraja I, was the mother of Rajaraja Narendra. He married Ammangadevi, daughter of Rajendra I. Their son was Kulottunga I.</li>
+      <li>{t('legendParent')}</li>
+      <li>{t('legendDebated')}</li>
+      <li>{t('legendHeir')}</li>
+      <li>{t('legendNarendra')}</li>
     </ul>
   )
 }

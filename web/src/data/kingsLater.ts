@@ -21,7 +21,7 @@ export const kingsLater: King[] = [
     summary:
       'Rajadhiraja I was anointed heir long before he ruled alone, about 1018, and he became sole king when Rajendra I died. He took the war into the Western Chalukya country and claimed a victor’s ceremony after entering the region of their capital, Kalyani. In 1054, at Koppam, he was killed in battle against Someshvara I. His brother Rajendra II took command on the same field and kept the army from breaking. The king died. The kingdom did not fall with him.',
     meikeerthiNote:
-      'His inscriptions continue the imperial prasasti and add the Chalukya war. A separate short Tamil opening is not quoted here, so that a reconstructed poem is not passed off as the stone.',
+      'His inscriptions continue the imperial prasasti and add the Chalukya war. A separate short Tamil opening is not quoted here, so that a reconstructed poem is not passed off as the inscription.',
     battles: [
       {
         name: 'Campaign to Kalyani',
@@ -217,7 +217,7 @@ export const kingsLater: King[] = [
         yearLabel: 'c. 1070',
         outcome: 'loss',
         summary:
-          'Vijayabahu I restored a Sinhala kingdom and ended the Chola province on the island. Later maps in this site leave Lanka outside the filled realm.',
+          'Vijayabahu I restored a Sinhala kingdom and ended the Chola province on the island. Later realm maps leave Lanka outside the filled country.',
       },
       {
         name: 'Wars with Vikramaditya VI',

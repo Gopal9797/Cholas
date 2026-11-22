@@ -49,9 +49,20 @@ export const kingsEarly: King[] = [
     reignEndLabel: 'c. 907',
     fatherId: 'vijayalaya',
     sons: [{ name: 'Parantaka I', nameTamil: 'முதலாம் பராந்தகன்', kingId: 'parantaka-i' }],
-    spouses: [],
+    spouses: [
+      {
+        name: 'Ilangon Pichchi',
+        note: 'Named among his queens in the inscriptional lists of the reign.',
+      },
+      {
+        name: 'Vayiri Akkan, Tribhuvana Madeviyar',
+        nameTamil: 'வயிரி அக்கன்',
+        note: 'Named as a queen in South Indian Inscriptions vol. 13. The mother of Parantaka I is not fixed to her by one stone.',
+      },
+    ],
     daughters: [],
-    familyNote: 'No queen is named in this first version.',
+    familyNote:
+      'His mother is named Anaghavati in the standard accounts. The queens above are the names in the inscriptional lists. A mistress, Nangai Sattaperumanar, is also named in one of those records.',
     summary:
       'Aditya I turned his father’s river chiefdom into a kingdom that included Tondaimandalam, the northern Tamil country of the Pallavas. The decisive fight was at Tiruppurambiyam, where he defeated the Pallava king Aparajita. A Ganga ally, Prithvipati I, died on that field. After the Pallava collapse, Aditya’s records are also the records of a builder: small stone temples begin to line the Kaveri in his reign and his son’s.',
     meikeerthiNote:
@@ -102,11 +113,8 @@ export const kingsEarly: King[] = [
       'Other queens are named in the records and in later lists, among them Kizhan Adikal Ravi Neeli, Tennavan Mahadevi, and Villavan Mahadevi. The mother-to-son link is secure for Rajaditya. It is not secure for every child. Uttamasili is also named among the sons. He did not reign.',
     summary:
       'Parantaka I took the title of the king who conquered Madurai. He drove the Pandya king Rajasimha II from Madurai and carried the war into northern Sri Lanka. For a generation the Chola realm looked larger than anything Vijayalaya had ruled. In 949 that expansion broke. At Takkolam the Rashtrakuta king Krishna III defeated the Chola army and killed the crown prince Rajaditya. Tondaimandalam passed out of Chola hands. The next few reigns live in the shadow of that defeat.',
-    meikeerthi: {
-      tamil: 'மதுரையும் ஈழமும் கொண்ட கோப்பரகேசரிவர்மர்',
-      englishSense:
-        'His inscriptions introduce him as Koparakesarivarman, the king who took Madurai and Ilam, which is Sri Lanka. It is a title-line, not the long verse meikeerthi of a later reign.',
-    },
+    meikeerthiNote:
+      'The titles above are the names on his inscriptions. The long verse meikeerthi of a later reign is not quoted here.',
     battles: [
       {
         name: 'Conquest of Madurai',
@@ -179,9 +187,15 @@ export const kingsEarly: King[] = [
     debate: 'A reign of about a year. The dates 956–957 are a conventional slot between his brother and his son.',
     fatherId: 'parantaka-i',
     sons: [{ name: 'Parantaka II, Sundara Chola', nameTamil: 'சுந்தர சோழன்', kingId: 'sundara' }],
-    spouses: [],
+    spouses: [
+      {
+        name: 'Kalyani',
+        nameTamil: 'கல்யாணி',
+        note: 'A Vaidumba princess. Named as the mother of Parantaka II, Sundara Chola.',
+      },
+    ],
     daughters: [],
-    familyNote: 'No queen is named in this first version.',
+    familyNote: 'Kalyani is the queen the standard accounts name as Sundara’s mother.',
     summary:
       'Arinjaya was a younger son of Parantaka I and the brother of Gandaraditya. He ruled for about a year. Almost nothing of a public career is securely told of him. His place in the story is genealogical: he is the father of Sundara Chola, and through Sundara the grandfather of Rajaraja I.',
     meikeerthiNote: 'No stable meikeerthi is tied to this very short reign. Nothing is invented to fill the gap.',
@@ -208,8 +222,8 @@ export const kingsEarly: King[] = [
     spouses: [
       {
         name: 'Vanavan Mahadevi',
-        nameTamil: 'வாணவன் மாதேவி',
-        note: 'Named as the mother of Rajaraja I. Later lists also call her the mother of Aditya II. The stones are explicit for Rajaraja.',
+        nameTamil: 'வானவன் மாதேவி',
+        note: 'Named as the mother of Rajaraja I. Later lists also call her the mother of Aditya II. Inscriptions are explicit for Rajaraja.',
       },
     ],
     sons: [
@@ -229,7 +243,7 @@ export const kingsEarly: King[] = [
       },
     ],
     summary:
-      'Sundara Chola, Parantaka II, began to lift the kingdom out of the years after Takkolam. The Pandya country was pressed again, and the famous victory over Vira Pandya belongs to his son Aditya II. Sundara’s own reign is also the family crisis that follows. Aditya II was murdered. A later stone at the Anantheeswarar temple in Udayarkudi names the men punished for that killing. The throne did not pass at once to the boy Rajaraja. It passed to Uttama, son of Gandaraditya. Rajaraja waited.',
+      'Sundara Chola, Parantaka II, began to lift the kingdom out of the years after Takkolam. He took Madurai back, recovered Tondaimandalam from the Rashtrakutas, and led an expedition to Sri Lanka that ended in a treaty rather than a conquest. The famous victory over Vira Pandya belongs to his son Aditya II. Sundara’s own reign is also the family crisis that follows. Aditya II was murdered. An inscription at the Anantheeswarar temple in Udayarkudi names the men punished for that killing. The throne did not pass at once to the boy Rajaraja. It passed to Uttama, son of Gandaraditya. Rajaraja waited.',
     meikeerthiNote:
       'Inscriptions of the reign exist. A single short meikeerthi opening is not quoted here. The famous head-taking title belongs to his son Aditya II.',
     battles: [
@@ -261,28 +275,25 @@ export const kingsEarly: King[] = [
       {
         name: 'Ilaada Madeviyar',
         nameTamil: 'இளாட மாதேவியார்',
-        note: 'Named as his wife in later accounts, including the English Wikipedia. The published inscriptions of his own reign do not name her. She is not the Ilada Mahadevi of Rajaraja I.',
+        note: 'Named as his wife in later accounts. The published inscriptions of his own reign do not name her. She is not the Ilada Mahadevi of Rajaraja I.',
       },
     ],
     sons: [
       {
         name: 'Karikala Kannan',
         nameTamil: 'கரிகால கண்ணன்',
-        note: 'Also called Karikala Karnan. Later accounts, including the English Wikipedia, name him as Aditya’s son. The Udayarkudi inscription does not. He did not rule.',
+        note: 'Also called Karikala Karnan. Named as Aditya’s son in later accounts. The Udayarkudi inscription does not name him. He did not rule.',
       },
     ],
     daughters: [],
     debate:
-      'The Udayarkudi stone names the men it calls traitors for the killing. It does not name the person who ordered it. Uttama, who took the throne after Sundara, is not named in that record. Later writers have argued about him, and about others. Those arguments are not the inscription. His own records run to a fifth year. This list counts the co-regency from about 966 to about 971. Uttama’s coronation is still counted from about 970, so the last year overlaps that handoff.',
+      'The Udayarkudi inscription names the men it calls traitors for the killing. It does not name the person who ordered it. Uttama, who took the throne after Sundara, is not named in that record. Later writers have argued about him, and about others. Those arguments are not the inscription. His own records run to a fifth year. This list counts the co-regency from about 966 to about 971. Uttama’s coronation is still counted from about 970, so the last year overlaps that handoff.',
     familyNote:
-      'The son and the wife are the names later tradition gives. They are not in the stone that names his killers, and a birth in 942 is repeated online without an inscription to date it. He died before a sole reign. He is on the dynasty diagram and not in the coronation list.',
+      'The son and the wife are names given in later accounts. They are not in the Udayarkudi inscription that names his killers. A birth year of 942 has no inscription behind it. He died before a sole reign. He is on the dynasty diagram and not in the coronation list.',
+    meikeerthiNote:
+      'The titles above are the names on his records. They are a prince’s titles, not a sole coronation.',
     summary:
-      'Aditya II was the elder son of Sundara Chola and the heir of the main line. As a prince he defeated Vira Pandya, and his records give him the hard title of the king who took that Pandya’s head. He was then assassinated, before a sole coronation that this list can date. The account of the killing is a stone at the Anantheeswarar temple in Udayarkudi, near Kattumannarkoil. In the second year of Rajakesarivarman, identified as Rajaraja I, about 988, the sabha of Viranarayana-chaturvedimangalam copied a royal letter. The letter says three brothers were guilty of treason for killing Karikala Chola, the prince who took the Pandya’s head. They are Soman, whose other name is broken on the stone; his younger brother Ravidasan, titled Panchavan Brahmadirajan; and the next brother, Parameswaran, titled Irumudichola Brahmadirajan. Their property was taken, and so was property of named relatives, including a brother called Malaiyanuran. The record is of confiscation and sale. It does not record an execution. Because a sole coronation is not established, he is kept off the coronation list.',
-    meikeerthi: {
-      tamil: 'வீரபாண்டியன் தலை கொண்ட கோப்பரகேசரிவர்மர்',
-      englishSense:
-        'His records call him Koparakesarivarman, the king who took the head of Vira Pandya. The line is a princely title. It is not evidence that he was crowned sole king.',
-    },
+      'Aditya II was the elder son of Sundara Chola and the heir of the main line. As a prince he defeated Vira Pandya, and his records give him the hard title of the king who took that Pandya’s head. He was then assassinated, before a sole coronation that this list can date. The account of the killing is an inscription at the Anantheeswarar temple in Udayarkudi, near Kattumannarkoil. In the second year of Rajakesarivarman, identified as Rajaraja I, about 988, the sabha of Viranarayana-chaturvedimangalam copied a royal letter. The letter says three brothers were guilty of treason for killing Karikala Chola, the prince who took the Pandya’s head. They are Soman, whose other name is broken on the inscription; his younger brother Ravidasan, titled Panchavan Brahmadirajan; and the next brother, Parameswaran, titled Irumudichola Brahmadirajan. Their property was taken, and so was property of named relatives, including a brother called Malaiyanuran. The record is of confiscation and sale. It does not record an execution. Because a sole coronation is not established, he is kept off the coronation list.',
     battles: [
       {
         name: 'Defeat of Vira Pandya',
@@ -338,7 +349,7 @@ export const kingsEarly: King[] = [
     familyNote:
       'His mother was Sembiyan Mahadevi. The queens above are the ones the inscriptions and the standard accounts name. No son of his took the throne. It passed to his cousin Rajaraja I.',
     summary:
-      'Uttama was the son of Gandaraditya and Sembiyan Mahadevi. He became king after Sundara Chola even though Sundara’s younger son, Rajaraja, was alive. The arrangement kept the throne in Gandaraditya’s branch for one reign. Uttama’s years are quiet beside the reigns on either side of him: no new conquest title, and a court still marked by his mother’s temple building. The Udayarkudi inscription, set up in Rajaraja’s second year, names Soman, Ravidasan, and Parameswaran for the murder of Aditya II. It does not name Uttama. Later historians have still asked whether he benefited from the killing, or whether he ordered it. The stone does not answer that.',
+      'Uttama was the son of Gandaraditya and Sembiyan Mahadevi. He became king after Sundara Chola even though Sundara’s younger son, Rajaraja, was alive. The arrangement kept the throne in Gandaraditya’s branch for one reign. Uttama’s years are quiet beside the reigns on either side of him: no new conquest title, and a court still marked by his mother’s temple building. The Udayarkudi inscription, set up in Rajaraja’s second year, names Soman, Ravidasan, and Parameswaran for the murder of Aditya II. It does not name Uttama. Later historians have still asked whether he benefited from the killing, or whether he ordered it. The inscription does not answer that.',
     meikeerthiNote:
       'His inscriptions do not carry a conquest meikeerthi of the kind quoted for Parantaka I or Rajaraja I. None is invented here.',
     battles: [],
@@ -366,7 +377,7 @@ export const kingsEarly: King[] = [
       },
       {
         name: 'Vanavan Mahadevi',
-        nameTamil: 'வாணவன் மாதேவி',
+        nameTamil: 'வானவன் மாதேவி',
         note: 'Also titled Tribhuvana Mahadevi. A record of his fourth year names her as the mother of Rajendra I. Other lists give that place to Panchavan Mahadevi. Both names are on stone. Which woman was the mother is not settled by one inscription.',
       },
       {
@@ -412,7 +423,7 @@ export const kingsEarly: King[] = [
       {
         name: 'Viranarayani',
         nameTamil: 'வீரநாராயணி',
-        note: 'A title that stands beside the queens of this reign. It may be a name or a style. The stones do not say which.',
+        note: 'A title that stands beside the queens of this reign. It may be a name or a style. The inscriptions do not say which.',
       },
     ],
     sons: [{ name: 'Rajendra I', nameTamil: 'முதலாம் இராஜேந்திரன்', kingId: 'rajendra-i' }],
@@ -429,10 +440,10 @@ export const kingsEarly: King[] = [
       'Rajaraja I, born Arulmozhivarman, is the king who made the later Cholas an empire. Crowned about 985, he spent the reign taking apart the limits his grandfather had lost. The meikeerthi credits him with Kandalur Salai, with Vengi and the Karnataka districts, with Kollam and Kalinga, with northern Sri Lanka, with the Chalukya country of Irattapadi, and with islands in the western sea. Some of those lines record rule. Some record a raid or a claim. He also built the great temple at Thanjavur, Rajarajeshvaram, and left a government that wrote its business on stone. His son Rajendra was anointed beside him before the reign ended.',
     meikeerthi: {
       tamil:
-        'திருமகள் போலப் பெருநிலச் செல்வியும்\nதனக்கே யுரிமை பூண்டமை மனக்கொளக்\nகாந்தளூர்ச் சாலைக் கலமறுத் தருளி\nவேங்கை நாடுங் கங்க பாடியும்\nதடிகை பாடியும் நுளம்ப பாடியும்\nகுடமலை நாடுங் கொல்லமுங் கலிங்கமும்\nமுரட்டெழிற் சிங்கள ரீழ மண்டலமும்\nஇரட்ட பாடி யேழரை யிலக்கமும்\nமுந்நீர்ப் பழந்தீவு பன்னீராயிரமும்',
+        'திருமகள் போலப் பெருநிலச் செல்வியும்\nதனக்கே யுரிமை பூண்டமை மனக்கொளக்\nகாந்தளூர்ச் சாலைக் கலமறுத் தருளி\nவேங்கை நாடுங் கங்க பாடியும்\nதடிகை பாடியும் நுளம்ப பாடியும்\nகுடமலை நாடுங் கொல்லமுங் கலிங்கமும்\nமுரட்டெழிற் சிங்கள ரீழ மண்டலமும்\nஇரட்ட பாடி யேழரை யிலக்கமும்\nமுந்நீர்ப் பழந்தீவு பன்னீராயிரமுந்\nதிண்டிறல் வென்றித் தண்டாற் கொண்டதன்\nனெழில்வள ரூழியு ளெல்லா யாண்டுந்\nதொழுதக விளங்கும் யாண்டே செழியரைத்\nதேசுகொள் கோராசகேசரி வர்மரான\nஉடையார் ஸ்ரீராசராச தேவர்க்கு யாண்டு',
       englishSense:
-        'The prasasti says the goddess of the great earth took him as her own, as fortune had, and that he then cut down the fleet, or the establishment, at Kandalur Salai. The lines after that are a list of countries: Vengi, Gangapadi, Tadigaipadi, Nulambapadi, the hill country of Kudamalai, Kollam, Kalinga, the Sinhala realm of Ilam, the seven-and-a-half-lakh country of Irattapadi, and twelve thousand old islands in the sea. The list is a royal claim. It is not a map of land he governed in one block, and the meaning of “cutting the kalam” at Kandalur is still argued.',
-      note: 'Opening of the meikeerthi used on his inscriptions from about the eighth year. The full text is longer, and it grew as the reign went on.',
+        'The prasasti says the goddess of the great earth took him as her own, as fortune had, and that he then cut down the fleet, or the establishment, at Kandalur Salai. The lines after that are a list of countries: Vengi, Gangapadi, Tadigaipadi, Nulambapadi, the hill country of Kudamalai, Kollam, Kalinga, the Sinhala realm of Ilam, the seven-and-a-half-lakh country of Irattapadi, and twelve thousand old islands in the sea. The close says the beauty of the reign grew by what his victorious army took, that every year of it shone as a year when the Pandyas bowed, and that this is Rajakesarivarman, Udaiyar Sri Rajaraja Devar. The word yandu introduces the regnal year, which is different on each stone. The list is a royal claim. It is not a map of land he governed in one block, and the meaning of “cutting the kalam” at Kandalur is still argued.',
+      note: 'The prasasti as it stands once the conquest list is in place, from about the later years of the reign. The number after யாண்டு belongs to the individual stone and is not printed here. Earlier records of the same reign carry a shorter list. திண்டிறல் and எல்லா are read differently from copy to copy.',
     },
     battles: [
       {
@@ -490,7 +501,7 @@ export const kingsEarly: King[] = [
       {
         name: 'Tribhuvana Mahadevi',
         nameTamil: 'திருபுவன மாதேவி',
-        note: 'Named as a queen, and in some Tamil accounts identified with a Vanavan Mahadevi. The same titles are used for a queen of his father. The records reuse royal styles. This page does not decide that the mother and the wife are one woman.',
+        note: 'Named as a queen, and in some Tamil accounts identified with a Vanavan Mahadevi. The same titles are used for a queen of his father. The records reuse royal styles. Whether the mother and the wife are one woman is left open.',
       },
       {
         name: 'Mukkokilan',
@@ -505,7 +516,7 @@ export const kingsEarly: King[] = [
       {
         name: 'Viramahadevi',
         nameTamil: 'வீரமாதேவி',
-        note: 'Named among his queens. A later tradition says she died on his funeral pyre. That story is kept as a tradition, not as a settled fact.',
+        note: 'Named among his queens. Some accounts say she died on his funeral pyre. That story is not treated here as settled fact.',
       },
     ],
     sons: [
@@ -542,14 +553,14 @@ export const kingsEarly: King[] = [
         yearLabel: 'c. 1022–1025',
         outcome: 'win',
         summary:
-          'His army marched through Kalinga and Odisha to the Ganges, defeated rulers along the way, and brought back water. The win is the raid. On the Wikipedia map that coast is grey influence, not brown territory.',
+          'His army marched through Kalinga and Odisha to the Ganges, defeated rulers along the way, and brought back water. The win is the raid. On the realm map that coast is grey influence, not brown territory.',
       },
       {
         name: 'Kadaram expedition',
         yearLabel: 'c. 1025',
         outcome: 'win',
         summary:
-          'A fleet crossed the Bay of Bengal and struck Srivijaya’s ports, including Kadaram. The prasasti lists the places. On the Wikipedia map those ports are grey influence, not brown territory.',
+          'A fleet crossed the Bay of Bengal and struck Srivijaya’s ports, including Kadaram. The prasasti lists the places. On the realm map those ports are grey influence, not brown territory.',
       },
       {
         name: 'War with Jayasimha II',
@@ -560,7 +571,7 @@ export const kingsEarly: King[] = [
     ],
     territoryId: 'rajendra',
     territoryCaption:
-      'The Wikipedia map shades territory in brown and influence in grey. The Ganges campaign and the Kadaram ports are the grey, not annexed provinces.',
+      'The realm map shades territory in brown and influence in grey. The Ganges campaign and the Kadaram ports are the grey, not annexed provinces.',
     sources: bookSources('Rajendra I'),
   },
 ]

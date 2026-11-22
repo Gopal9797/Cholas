@@ -81,7 +81,7 @@ export const prasastiById: Record<string, Meikeerthi> = {
     tamil: rajendraPrasasti,
     englishSense:
       'This is the prasasti that begins tirumanni valara. It opens with the earth and the goddess of victory as his queens, then names crowns taken in the south: Ilam, the Chera crown, and the old islands. The middle of the poem is the northern march, through Irattapadi, Sakkarakottam, Odda, Kosala, Dandabhukti, and Vangala, to the Ganges water he brought home after defeating Mahipala. The last movement sends ships across the sea, takes Sangrama Vijayottungavarman of Kadaram with his elephants, and lists the ports: Srivijaya, Pannai, Malaiyur, Mayirudingam, Ilangasoka, Mapappalam, Mevilimbangam, Valaippanduru, Takkolam, Madamalingam, Ilamuridesam, Manakkavaram, and Kadaram. The Ganges march and the Kadaram voyage are campaigns. They were not provinces he annexed.',
-    note: 'The Tamil follows the stone prasasti in the form that already includes Kadaram. Pandarathar notes that this meikeerthi first appears on inscriptions of the third regnal year. The opening line is given in the spelling that same account cites, திருமன்னி வளர. Later lines keep the public inscriptional reading, and a few syllables are read differently from copy to copy. This is the inscription, not a passage from his book.',
+    note: 'The Tamil follows the inscriptional prasasti in the form that already includes Kadaram. Pandarathar notes that this meikeerthi first appears on inscriptions of the third regnal year. The opening line is given in the spelling that same account cites, திருமன்னி வளர. Later lines keep the public inscriptional reading, and a few syllables are read differently from copy to copy. This is the inscription, not a passage from his book.',
   },
   'rajadhiraja-i': openings(
     'திங்களேர் தருதன் தொங்கல்\nதிங்களேர் பெற வளர\nதிருக்கொடியோடு தியாகக்கொடி',
@@ -89,7 +89,7 @@ export const prasastiById: Record<string, Meikeerthi> = {
   ),
   'rajendra-ii': openings(
     'திருமகளது புவியெனும்\nதிருமகள் மருவிய செங்கோல்',
-    'Two openings mark Rajendra II. One begins with the earth as the goddess’s world. The other begins with the sceptre the goddess has joined. Either one separates his stones from his brother’s.',
+    'Two openings mark Rajendra II. One begins with the earth as the goddess’s world. The other begins with the sceptre the goddess has joined. Either one separates his inscriptions from his brother’s.',
   ),
   'virarajendra': openings(
     'திருவளர் திரள்புயத் திருநிலவளம்\nவீரமே துணையாக',

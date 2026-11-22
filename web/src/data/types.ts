@@ -13,10 +13,25 @@ export type Battle = {
   debated?: boolean
 }
 
+export type Copy = {
+  en: string
+  ta: string
+}
+
+export type Locale = 'en' | 'ta'
+
+export function readCopy(locale: Locale, value: string | Copy | undefined): string {
+  if (!value) return ''
+  if (typeof value === 'string') return value
+  return value[locale] || value.en
+}
+
 export type Meikeerthi = {
   tamil: string
   englishSense: string
+  senseTamil?: string
   note?: string
+  noteTamil?: string
 }
 
 export type KingImage = {
@@ -57,6 +72,7 @@ export type King = {
   titles?: Meikeerthi
   meikeerthi?: Meikeerthi
   meikeerthiNote?: string
+  meikeerthiNoteTamil?: string
   image?: KingImage
   battles: Battle[]
   territoryId: string

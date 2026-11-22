@@ -26,7 +26,7 @@ body {
     var(--bg);
   color: var(--ink);
   font-family: var(--ui);
-  font-size: 1.16rem;
+  font-size: 1.28rem;
   line-height: 1.6;
 }
 
@@ -62,8 +62,8 @@ a { color: inherit; }
   height: min(88vh, 820px);
   object-fit: cover;
   object-position: center 42%;
-  opacity: 0.94;
-  mask-image: linear-gradient(180deg, #000 0%, #000 46%, transparent 100%);
+  opacity: 1;
+  mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
 }
 
 .atmosphere::after {
@@ -71,23 +71,31 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(17, 14, 11, 0.55) 0%, rgba(17, 14, 11, 0.28) 42%, rgba(17, 14, 11, 0.08) 100%),
-    linear-gradient(180deg, rgba(17, 14, 11, 0.15), transparent 30%);
+    linear-gradient(90deg, rgba(17, 14, 11, 0.28) 0%, rgba(17, 14, 11, 0.1) 46%, rgba(17, 14, 11, 0) 100%),
+    linear-gradient(180deg, rgba(17, 14, 11, 0.05), transparent 22%);
 }
 
 .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  background: rgba(17, 14, 11, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1.1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-  background: rgba(17, 14, 11, 0.94);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.15rem 1.25rem;
 }
+
+.topbar-inner.is-wide { max-width: 1680px; }
 
 .brand {
   display: flex;
@@ -107,13 +115,88 @@ a { color: inherit; }
   box-shadow: inset 0 0 0 3px var(--bg), inset 0 0 0 5px var(--red);
 }
 
-.nav { display: flex; gap: 1.1rem; }
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.45rem 1rem; }
 
 .nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
 }
+
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-switch button {
+  background: transparent;
+  color: var(--muted);
+  border: 0;
+  padding: 0.28rem 0.7rem;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.lang-switch button.is-on { color: var(--gold); background: rgba(228, 194, 122, 0.08); }
+
+.doors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.85rem;
+  margin: 1.6rem 0 0.4rem;
+}
+
+.door {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  padding: 1.05rem 1.1rem 1.15rem;
+  background: rgba(17, 14, 11, 0.45);
+}
+
+.door h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.45rem;
+}
+
+.door p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+.door:hover, .door:focus-visible { border-color: var(--gold); }
+
+.card-index, .meikeerthi-index { display: grid; gap: 0.2rem; }
+
+.dossier-card, .meikeerthi-index article, .chapter {
+  border-top: 1px solid var(--line);
+  padding: 1.15rem 0 0.4rem;
+}
+
+.dossier-card h2, .meikeerthi-index h2, .chapter h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.15rem 0 0.35rem;
+}
+
+.realm-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.realm-compare .realm-figure img { width: 100%; height: auto; }
 
 .nav a:hover, .nav a:focus-visible { color: var(--gold); }
 
@@ -439,7 +522,7 @@ h3 { margin: 0 0 0.7rem; font-size: 1.25rem; color: var(--gold); }
 .birth-note { max-width: 44rem; }
 .empty { color: var(--faint); }
 
-.prose-block p, .debate, .meikeerthi-sense, .meikeerthi-empty { max-width: 48rem; font-size: 1.28rem; }
+.prose-block p, .debate, .meikeerthi-sense, .meikeerthi-empty { max-width: 48rem; font-size: 1.42rem; }
 
 .family, .battles, .realm, .page-sources { margin-top: 2.6rem; }
 
@@ -572,7 +655,7 @@ h3 { margin: 0 0 0.7rem; font-size: 1.25rem; color: var(--gold); }
 .missing a { color: var(--gold); }
 
 @media (max-width: 980px) {
-  .atmosphere img { height: 52vh; opacity: 0.82; }
+  .atmosphere img { height: 62vh; opacity: 0.92; }
   .wiki, .wiki-main, .hero { grid-template-columns: 1fr; }
   .infobox { grid-column: 1; grid-row: auto; position: static; max-height: none; }
   .wiki-rail {

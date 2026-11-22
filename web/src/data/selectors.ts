@@ -12,6 +12,10 @@ export function coronationList(): King[] {
     .sort((a, b) => a.coronationYear - b.coronationYear || a.sortIndex - b.sortIndex)
 }
 
+export function dossierOrder(): King[] {
+  return kings.slice().sort((a, b) => a.coronationYear - b.coronationYear || a.sortIndex - b.sortIndex)
+}
+
 export function kingPath(id: string): string {
   return `/kings/${id}`
 }
