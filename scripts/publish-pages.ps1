@@ -9,6 +9,11 @@ New-Item -ItemType File -Force -Path (Join-Path $root ".nojekyll") | Out-Null
 $assets = Join-Path $root "assets"
 if (Test-Path $assets) { Remove-Item -Recurse -Force $assets }
 Copy-Item -Recurse -Force "dist\assets" $assets
+$media = Join-Path $root "media"
+if (Test-Path $media) { Remove-Item -Recurse -Force $media }
+if (Test-Path "dist\media") {
+  Copy-Item -Recurse -Force "dist\media" $media
+}
 $docs = Join-Path $root "docs"
 if (Test-Path $docs) { Remove-Item -Recurse -Force $docs }
 New-Item -ItemType Directory -Force -Path $docs | Out-Null
